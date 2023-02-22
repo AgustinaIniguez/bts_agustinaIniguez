@@ -45,32 +45,34 @@
         </nav>
     </header>
     <main>
-        <section class="formularios">
-            <div>
-                <h2>Formulario de Contacto</h2>
-                <p> ¿Queres ponerte en contacto con nosotros? Llena el formulario y dejanos tu mensaje.</p>
-            </div>
-            <div>
-                <label for="">Nombre</label>
-                <input type="text" name="nombre" placeholder="Escribi tu nombre">
-            </div>
-            <div>
-                <label for="">Apellido</label>
-                <input type="text" name="apellido" placeholder="Escribi tu apellido">
-            </div>
-            <div>
-                <label for="">Correo</label>
-                <input type="email" name="correo" placeholder="Escribi tu correo">
-            </div>
-            <div>
-                <h3>Escribi aca un comentario</h3>
-                <textarea name="" id="" cols="40" rows="10"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Enviar formulario">
-                <input type="reset" value="Borrar">
-            </div>
-
+        <section class="formulario">
+            <formc class="form">
+                <h2 class="form_tittle">Contactanos</h2>
+                <p class="form_paragraph">¿Queres ponerte en contacto con nosotros? <a href="#" class="form_link"></a>
+                </p>
+                <div class="form_container">
+                    <div class="form_group">
+                        <input type="text" id="name" class="form_input" placeholder=" ">
+                        <label for="name" class="form_label">Nombre:</label>
+                        <span class="form_line"></span>
+                    </div>
+                    <div class="form_group">
+                        <input type="text" id="user" class="form_input" placeholder=" ">
+                        <label for="user" class="form_label">Apellido:</label>
+                        <span class="form_line"></span>
+                    </div>
+                    <div class="form_group">
+                        <input type="text" id="password" class="form_input" placeholder=" ">
+                        <label for="password" class="form_label">email:</label>
+                        <span class="form_line"></span>
+                    </div>
+                    <div class="form_group">
+                        <input type="text" id="user" class="form_input" placeholder=" ">
+                        <label for="user" class="form_label">Escribe un mensaje:</label>
+                    </div>
+                    <input type="submit" class="form_submit" value="enviar">
+                </div>
+            </formc>
         </section>
 
     </main>

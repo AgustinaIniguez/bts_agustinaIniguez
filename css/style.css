@@ -49,119 +49,195 @@
 /*-----------------------MAIN----------------------*/
 
 
-.hero div{
-    background-image: url(../img/hero10.jpg);
-    width: 100%;
-    height: calc(100vh - 99px);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed
+.carousel-item{
+    height: 80vh;
 }
 
-.hero h2{
-    color:#5B3000;
-    margin-bottom: 20px;
-    font-size: 50px ;
-    font: weight 900px;
-    font-family:'Poppins', sans-serif;
-    text-align:center;
-    padding: 30px
-
+.imgCarrusel{
+    object-fit: cover;
 }
 
 
 
-.miembros div{
-    display: inline-block;
-    text-align: center;
-    margin: 23px;
-    border: 1px solid#5B3000;
-    height: 390px;
+.miembros .padre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10px;
+    row-gap: 30px;
+    column-gap: 5px;
+}
+
+
+.miembros .padre div{
+    width: 38vh;
+    height: 70vh;
+    border: 2px solid#5B3000;
+    margin: 20px;
     box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
 }
 
 
-.miembros h2{
-    color:#5B3000;
-    font-style: normal;
-    font-weight: 800;
-    font-family:'Poppins', sans-serif;
-    padding: 10px 16px 10px 16px;
+.miembros div img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
 }
 
-.miembros div img{
-    width: 240px;
-    height: 315px; 
+
+.miembros .miembrosT{
+    color:#5B3000;
+    margin-bottom: 12px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2.55rem;
+    font-weight: 900;
+    font-family:'Poppins', sans-serif;
+    padding: 15px;
 }
+
 
 .miembros div h3{
     color:#5B3000;
+    font-size: 1.58rem;
     font-style: italic;
-    font-family:'Poppins', sans-serif
-    
+    font-weight: 500;
+    font-family:'Poppins', sans-serif;
+    padding: 5px;
+    text-align: center;
 }
 
 .miembros div p{
-    margin-bottom: 20px;
     color:#5B3000;
     font-weight: 600;
+    font-size: 1.18rem;
     font-family:'Open Sans', sans-serif;
+    text-align: center;
 }
-
-
-.galeriaImagenes div p{
-    margin-bottom: 20px;
-    color:#5B3000;
-    font-weight: 600;
-    font-family:'Open Sans', sans-serif;
-}
-
 
 
 .novedades h3{
     color: #532C0B;
     font-style: normal;
-    font-weight: 900;
+    font-size:  2.2em;
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
-    padding: 10px 16px 10px 16px;
+    margin: 15px;
 }
-
-
-
-
-
-
-
-
 
 
 
 /*-----------Contacto----------*/
 
-.formularios div{
-    padding: 20px 19px 20px 19px;
+
+.formulario{
+    display: flex;
+    min-height: 100vh;
 }
 
-.formularios div h2{
-    color: #5B3000;
-    font-style: normal;
-    font-weight: 800;
+.form{
+    background: linear-gradient(27deg,pink 50% ,rgb(196, 236, 243) 50% );
+    margin: auto;
+    width: 90%;                                  
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/ 30%);
+    text-align: center;
+}
+
+.form_tittle{
+    font-size: 2rem;
     font-family: 'Poppins', sans-serif;
-    padding: 8px 2px 8px 2px;
+    color: #532C0B;
+    margin-bottom: .5em;
 }
 
-.formularios div h3{
-    color:#5B3000;
-}
-
-.formularios div p{
-    font: weight 700;
+.form_paragraph{
+    font-size: 1.35rem;
     font-family: 'Poppins', sans-serif;
-    color: #5B3000;
+    color: #532C0B;
+
 }
+
+.form_link{
+    font-weight: 400;
+    color:#532C0B;
+}
+
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form_group{
+    position: relative;
+}
+
+.form_input{
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(---color);
+}
+
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+}
+
+
+.form_label{
+    color: var(---color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+
+}
+
+.form_submit{
+    background: #532C0B;
+    color: white;
+    font-weight: 300;
+    font-family:'Poppins', sans-serif; ;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+
+}
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+
+}
+
+
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
+}
+
 
 
 /*-------CONTACTO------*/
