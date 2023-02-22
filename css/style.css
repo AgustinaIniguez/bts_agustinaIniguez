@@ -400,6 +400,36 @@ h1{
 /*-------Discografia------*/
 
 
+/*-----------------------MEDIA QUERY----------------------*/
+
+@media screen and (max-width:700px){
+    .novedades{
+        display: none;}
+}
+
+@media screen and (max-width:700px){
+    .miembros .miembrosT{
+        font-size: 2.28rem;
+        font-weight: 700;
+    }
+    .padre div h3{
+        font-size: 1.15rem;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .padre div p{
+        font-size: 1.10rem;
+        font-weight: 500;
+    }
+}
+
+
+@media screen and (max-width:420px){
+    .miembros .miembrosT{
+        font-size: 1.55rem;
+        font-weight: 500;
+    }
+}
 
 
 
