@@ -359,24 +359,42 @@ h1{
 /*-------Discografia------*/
 
 
-.discos h2{
-    color: #5B3000;
-    font-style: normal;
-    font-weight: 800;
+.discos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+    column-gap: 3px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.discosC{
+    height: 45vh;
+    width: 45vh;
+}
+
+.discos .imgDisco{
+    width: 97%;
+    height: 97%;
+}
+
+
+.discos div p{
+    text-align: center;
+    padding: 8px 10px;
+    background-color: pink;
+    font-size: 1.15rem;
     font-family: 'Poppins', sans-serif;
-    padding: 8px 2px 8px 2px;
+    width: 97%;
+
 }
-
-
-.discos div img{
-    width: 400px;
-    height: 450px;
+    
+.efecto:hover{
+    color:aqua;
 }
-
-
-
-
-
 
 
 /*-------Discografia------*/
