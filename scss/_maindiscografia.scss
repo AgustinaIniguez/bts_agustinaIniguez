@@ -1,0 +1,36 @@
+/*-------Discografia------*/
+
+
+.discos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+    column-gap: 3px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .discosC{
+        height: 45vh;
+        width: 45vh;
+        .imgDisco{
+            width: 97%;
+            height: 97%;
+            }
+        .textoC{
+                text-align: center;
+                padding: 8px 10px;
+                background-color: pink;
+                font-size: 1.15rem;
+                width: 97%;
+                }
+            
+            
+        }
+}
+    
+
+
+/*-------Discografia------*/
+
+        

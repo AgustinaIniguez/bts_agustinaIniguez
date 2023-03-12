@@ -1,0 +1,64 @@
+/*-----------------------MEDIA QUERY----------------------*/
+
+@media screen and (max-width:700px) {
+
+    /*--pertenece al index---*/
+    .novedades {
+        display: none;
+    }
+
+    /*--pertenece al index---*/
+
+    /*--pertenece a discografia---*/
+    .discografia {
+        .alto {
+            height: initial;
+        }
+    }
+
+    /*--pertenece a discografia---*/
+
+    /*--pertenece a merch---*/
+    .tarjetasT {
+        .padreT {
+            .ejemploT {
+                height: initial;
+                width: initial;
+                margin: 18px;
+                border: 6px outset pink;
+            }
+        }
+    }
+
+    /*--pertenece a merch---*/
+
+    /*--pertenece al index---*/
+    .miembros .miembrosT {
+        font-size: 1.90rem;
+        font-weight: 600;
+    }
+
+    .padre {
+        .hijoT {
+            width: 38vh;
+            height: 65vh;
+            .miembrosImg {
+                    width: 100%;
+                    height: 85%;
+            }
+            .tituloT {
+                    font-size: 1.55rem;
+                    font-weight: 600;
+                    padding: 4px;
+            }
+            .botonT {
+                    font-weight: 500;
+                    font-size: 1.29rem;
+                }
+            }
+        }
+
+
+    /*--pertenece al index---*/
+
+}

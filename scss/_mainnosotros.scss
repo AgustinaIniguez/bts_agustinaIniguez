@@ -1,0 +1,62 @@
+
+/*-------nosotros------*/
+
+
+.carousel-item .onu{
+    margin-bottom: 8px;
+    .imgOnu{
+        object-fit: cover;
+        height: 100%;
+        
+        
+    }
+    
+}
+
+/*-------Este titulo forma parte de otro div por eso no lo anide ------*/
+.citaTextual{
+    font-size: 1.59rem; 
+    font-family: $tipografia-general;
+    color: white;
+
+}
+
+
+
+/*-------Este es un titulo aparte por eso no lo anide ------*/
+.records{
+    color: $color-texto;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3.02rem;
+    font-weight: 900;
+    font-family: $tipografia-general;
+    padding: 15px;
+}
+    
+.discografia{
+        margin-top: 10px;
+        margin-bottom: 25px;
+        .alto{
+            height: 50vh;
+            .imgGaleria{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    
+
+/*-------El responsive dejo de funcionar verificar por que en 
+las media queries ------*/
+
+
+
+
+
+
+
+/*-------nosotros------*/
+
