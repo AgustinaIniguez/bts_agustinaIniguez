@@ -1,13 +1,11 @@
 /*-------Merch------*/
-
-
-h1{
+.tituloMerch{
     color:$color-texto;
     margin-bottom: 5px;
     margin-top: 30px;
     text-align: center;
-    font-size: 2.55rem;
-    font-weight: 900;
+    font-size: 3.02rem;
+    font-weight: 800;
     font-family: $tipografia-general;
     padding: 15px;
 }
@@ -42,41 +40,54 @@ h1{
     }
 }
 
+.tituloOfertas{
+    color:$color-texto;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 3.02rem;
+    font-weight: 800;
+    font-family: $tipografia-general;
+    padding: 5px;
+}
+
+
 
 .ejemploA{
     @include flex-direction-center (row);
     justify-content: space-between;
     background-color: pink;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
+    .ejemploB{
+        display: map-get($estilos, flexible );
+        flex-direction: map-get($estilos, direccion);
+        height: map-get($estilos, altura);
+        width: map-get($estilos, ancho);
+        .ejemploC{
+            width: 92%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .ejemploD{
+            font-size: 2.10rem;
+            font-weight: 600;
+            text-align: end;
+            font-family: $tipografia-general;
+            color: $color-texto;
+            padding: 60px;
+            text-align:center;
+        }
+    }
 
 }
 
-.ejemploB{
-    display: map-get($estilos, flexible );
-    flex-direction: map-get($estilos, direccion);
-    height: map-get($estilos, altura);
-    width: map-get($estilos, ancho);
-}
 
-.ejemploC{
-    width: 92%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.ejemploD{
-    font-size: 2.10rem;
-    font-weight: 600;
-    text-align: end;
-    font-family: $tipografia-general;
-    color: $color-texto;
-    padding: 50px;
-    text-align:center;
-}
+
 
 
 

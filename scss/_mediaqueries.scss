@@ -19,6 +19,11 @@
     /*--pertenece a discografia---*/
 
     /*--pertenece a merch---*/
+    .tituloMerch{
+        font-size: 1.80rem;
+        font-weight: 600;
+    }
+
     .tarjetasT {
         .padreT {
             .ejemploT {
@@ -26,9 +31,22 @@
                 width: initial;
                 margin: 18px;
                 border: 6px outset pink;
+                .tituloT{
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                }
             }
         }
     }
+
+    .tituloOfertas{
+        display: none;
+    }
+
+    .ejemploA{
+        display: none;
+    }
+
 
     /*--pertenece a merch---*/
 
@@ -49,16 +67,74 @@
             .tituloT {
                     font-size: 1.55rem;
                     font-weight: 600;
-                    padding: 4px;
+                    padding: 2px;
             }
             .botonT {
                     font-weight: 500;
-                    font-size: 1.29rem;
+                    font-size: 1.10rem;
+                    margin-bottom: 35px;
                 }
             }
         }
 
 
     /*--pertenece al index---*/
+
+    /*--pertenece a nosotros---*/
+
+        .tituloNosotros{
+            .records{
+                font-size: 1.90rem;
+                font-weight: 600;
+            }
+        }
+
+        .historia{
+            .historiaHijo{
+                display: none;
+            }
+            .historiaTexto{
+                font-size: 1.35rem;
+                font-weight: 600;
+            }
+        }
+
+
+
+
+    /*--pertenece a nosotros---*/
+
+
+    /*--pertenece a contacto---*/
+
+
+    .formulario{
+        .form{
+            .form_tittle{
+                font-size: 2.15rem;
+            }
+            .form_paragraph{
+                font-size: 1.15rem;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*--pertenece a contacto---*/
+
+
+
 
 }

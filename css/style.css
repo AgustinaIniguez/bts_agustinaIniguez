@@ -1,6 +1,6 @@
-/*--------------------VARIABLES--------------------*/
-/*--------------------AGREGAR DOS VARIABLES MAS--------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital,wght@0,300;0,500;1,400&family=Poppins:wght@300&family=Rubik&display=swap");
+/*--------------------VARIABLES--------------------*/
+/*----------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +8,12 @@
   box-sizing: border-box;
 }
 
+/*-----------------------aca van a ir todas las class sueltas----------------------*/
+.efecto:hover {
+  color: aqua;
+}
+
+/*-------hover no esta funcionando, VERIFICAR ------*/
 /*-----------------------aca van a ir todas las class sueltas----------------------*/
 .efecto:hover {
   color: aqua;
@@ -53,7 +59,7 @@
   margin-bottom: 12px;
   margin-top: 30px;
   text-align: center;
-  font-size: 2.58rem;
+  font-size: 3.3rem;
   font-weight: 900;
   font-family: "Poppins", sans-serif;
   padding: 15px;
@@ -118,19 +124,21 @@
   margin: auto;
   width: 90%;
   max-width: 400px;
-  padding: 4.5em 3em;
+  padding: 4.5rem 3rem;
   border-radius: 10px;
   box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 .formulario .form .form_tittle, .formulario .form .form_paragraph {
-  font-size: 2rem;
+  font-size: 2.3rem;
+  padding: 4px;
   font-family: "Poppins", sans-serif;
   color: #5B3000;
   margin-bottom: 0.5rem;
 }
 .formulario .form .form_paragraph {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
+  text-align: center;
 }
 .formulario .form .form_paragraph .form_link {
   font-weight: 400;
@@ -194,13 +202,13 @@
 
 /*-------CONTACTO------*/
 /*-------Merch------*/
-h1 {
+.tituloMerch {
   color: #5B3000;
   margin-bottom: 5px;
   margin-top: 30px;
   text-align: center;
-  font-size: 2.55rem;
-  font-weight: 900;
+  font-size: 3.02rem;
+  font-weight: 800;
   font-family: "Poppins", sans-serif;
   padding: 15px;
 }
@@ -236,38 +244,46 @@ h1 {
   margin: 10px;
 }
 
+.tituloOfertas {
+  color: #5B3000;
+  margin-bottom: 0px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 3.02rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+}
+
 .ejemploA {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: pink;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
 }
-
-.ejemploB {
+.ejemploA .ejemploB {
   display: flex;
   flex-direction: row;
-  height: 35vh;
+  height: 42vh;
   width: 160vh;
 }
-
-.ejemploC {
+.ejemploA .ejemploB .ejemploC {
   width: 92%;
   height: 100%;
   object-fit: cover;
 }
-
-.ejemploD {
+.ejemploA .ejemploB .ejemploD {
   font-size: 2.1rem;
   font-weight: 600;
   text-align: end;
   font-family: "Poppins", sans-serif;
   color: #5B3000;
-  padding: 50px;
+  padding: 60px;
   text-align: center;
 }
 
@@ -281,23 +297,21 @@ h1 {
   height: 100%;
 }
 
-/*-------Este titulo forma parte de otro div por eso no lo anide ------*/
 .citaTextual {
   font-size: 1.59rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
 }
 
-/*-------Este es un titulo aparte por eso no lo anide ------*/
-.records {
+.tituloNosotros .records {
   color: #5B3000;
   margin-bottom: 5px;
   margin-top: 30px;
   text-align: center;
-  font-size: 3.02rem;
+  font-size: 3.5rem;
   font-weight: 900;
   font-family: "Poppins", sans-serif;
-  padding: 15px;
+  padding: 20px;
 }
 
 .discografia {
@@ -313,8 +327,32 @@ h1 {
   object-fit: cover;
 }
 
-/*-------El responsive dejo de funcionar verificar por que en 
-las media queries ------*/
+.historia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.historia .historiaHijo {
+  width: 90vh;
+  height: 50vh;
+  display: flex;
+}
+.historia .historiaHijo .imgHistoria {
+  object-fit: cover;
+}
+.historia .historiaTexto {
+  margin: 6px;
+  text-align: center;
+  font-size: 1.45rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  /*background-color: pink;*/
+  width: 54vh;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
 /*-------nosotros------*/
 /*-------Discografia------*/
 .discos {
@@ -363,11 +401,25 @@ footer {
   }
   /*--pertenece a discografia---*/
   /*--pertenece a merch---*/
+  .tituloMerch {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
   .tarjetasT .padreT .ejemploT {
     height: initial;
     width: initial;
     margin: 18px;
     border: 6px outset pink;
+  }
+  .tarjetasT .padreT .ejemploT .tituloT, .tarjetasT .padreT .ejemploT .padre .hijoT .botonT, .padre .hijoT .tarjetasT .padreT .ejemploT .botonT {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .tituloOfertas {
+    display: none;
+  }
+  .ejemploA {
+    display: none;
   }
   /*--pertenece a merch---*/
   /*--pertenece al index---*/
@@ -386,15 +438,35 @@ footer {
   .padre .hijoT .tituloT, .padre .hijoT .botonT {
     font-size: 1.55rem;
     font-weight: 600;
-    padding: 4px;
+    padding: 2px;
   }
   .padre .hijoT .botonT {
     font-weight: 500;
-    font-size: 1.29rem;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
   }
   /*--pertenece al index---*/
+  /*--pertenece a nosotros---*/
+  .tituloNosotros .records {
+    font-size: 1.9rem;
+    font-weight: 600;
+  }
+  .historia .historiaHijo {
+    display: none;
+  }
+  .historia .historiaTexto {
+    font-size: 1.35rem;
+    font-weight: 600;
+  }
+  /*--pertenece a nosotros---*/
+  /*--pertenece a contacto---*/
+  .formulario .form .form_tittle, .formulario .form .form_paragraph {
+    font-size: 2.15rem;
+  }
+  .formulario .form .form_paragraph {
+    font-size: 1.15rem;
+  }
+  /*--pertenece a contacto---*/
 }
-/*@import "media_queries.scss"; van al final de todo
-acordate todo sigue un orden*/
 
 /*# sourceMappingURL=style.css.map */

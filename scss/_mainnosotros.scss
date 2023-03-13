@@ -8,32 +8,33 @@
         object-fit: cover;
         height: 100%;
         
-        
     }
     
 }
 
-/*-------Este titulo forma parte de otro div por eso no lo anide ------*/
+
 .citaTextual{
     font-size: 1.59rem; 
-    font-family: $tipografia-general;
+    font-family: $tipografia-alternativa;
     color: white;
 
 }
 
 
 
-/*-------Este es un titulo aparte por eso no lo anide ------*/
-.records{
-    color: $color-texto;
-    margin-bottom: 5px;
-    margin-top: 30px;
-    text-align: center;
-    font-size: 3.02rem;
-    font-weight: 900;
-    font-family: $tipografia-general;
-    padding: 15px;
+.tituloNosotros{
+    .records{
+        color: $color-texto;
+        margin-bottom: 5px;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 3.50rem;
+        font-weight: 900;
+        font-family: $tipografia-general;
+        padding: 20px;
+    }
 }
+
     
 .discografia{
         margin-top: 10px;
@@ -49,12 +50,34 @@
     }
     
 
-/*-------El responsive dejo de funcionar verificar por que en 
-las media queries ------*/
 
-
-
-
+.historia{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .historiaHijo{
+        width: 90vh;
+        height: 50vh;
+        display: flex;
+        .imgHistoria{
+            object-fit: cover;
+        }
+        
+    }
+    .historiaTexto{
+        margin: 6px;
+        text-align: center;
+        font-size: 1.45rem;
+        font-weight: 400;
+        font-family: $tipografia-general;
+        /*background-color: pink;*/
+        width: 54vh;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+    
+    }
+}
 
 
 
