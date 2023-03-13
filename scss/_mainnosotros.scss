@@ -62,22 +62,22 @@
         .imgHistoria{
             object-fit: cover;
         }
-        
     }
     .historiaTexto{
-        margin: 6px;
+        margin: 10px;
         text-align: center;
-        font-size: 1.45rem;
-        font-weight: 400;
+        font-size: 1.40rem;
+        font-weight: 600;
         font-family: $tipografia-general;
-        background-image: linear-gradient(to right, red, yellow);
         width: 54vh;
         height: 50vh;
         display: flex;
         align-items: center;
-    
+        color: $color-texto;
+        
     }
 }
+
 
 
 /*-------nosotros------*/

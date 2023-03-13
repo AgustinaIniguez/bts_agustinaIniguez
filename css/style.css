@@ -8,11 +8,8 @@
   box-sizing: border-box;
 }
 
-/*-----------------------aca van a ir todas las class sueltas----------------------*/
-/*-------hover no esta funcionando, VERIFICAR ------*/
-/*-----------------------aca van a ir todas las class sueltas----------------------*/
-/*-------hover no esta funcionando, VERIFICAR ------*/
-/*--------------------HEADER--------------------*/
+/*--------------------Pense utilizar utilidades para clases sueltas pero no tengo ninguna----------------------*/
+/*--------------------Pense utilizar utilidades para clases sueltas pero no tengo ninguna----------------------*/ /*--------------------HEADER--------------------*/
 .colorFondo {
   background-color: #BDE0FE;
 }
@@ -336,16 +333,16 @@
   object-fit: cover;
 }
 .historia .historiaTexto {
-  margin: 6px;
+  margin: 10px;
   text-align: center;
-  font-size: 1.45rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(to right, red, yellow);
   width: 54vh;
   height: 50vh;
   display: flex;
   align-items: center;
+  color: #5B3000;
 }
 
 /*-------nosotros------*/
@@ -451,12 +448,8 @@ footer {
     font-size: 1.9rem;
     font-weight: 600;
   }
-  .historia .historiaHijo {
+  .historia {
     display: none;
-  }
-  .historia .historiaTexto {
-    font-size: 1.35rem;
-    font-weight: 600;
   }
   /*--pertenece a nosotros---*/
   /*--pertenece a contacto---*/
