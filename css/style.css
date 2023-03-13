@@ -9,16 +9,8 @@
 }
 
 /*-----------------------aca van a ir todas las class sueltas----------------------*/
-.efecto:hover {
-  color: aqua;
-}
-
 /*-------hover no esta funcionando, VERIFICAR ------*/
 /*-----------------------aca van a ir todas las class sueltas----------------------*/
-.efecto:hover {
-  color: aqua;
-}
-
 /*-------hover no esta funcionando, VERIFICAR ------*/
 /*--------------------HEADER--------------------*/
 .colorFondo {
@@ -120,7 +112,7 @@
   min-height: 100vh;
 }
 .formulario .form {
-  background: linear-gradient(27deg, pink 50%, rgb(196, 236, 243) 50%);
+  background: linear-gradient(27deg, pink 50%, #BDE0FE 50%);
   margin: auto;
   width: 90%;
   max-width: 400px;
@@ -223,8 +215,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60vh;
-  width: 50vh;
+  height: 62vh;
+  width: 52vh;
   margin: 35px;
   border: 10px outset pink;
   background-color: pink;
@@ -242,6 +234,9 @@
   font-family: "Poppins", sans-serif;
   color: #5B3000;
   margin: 10px;
+}
+.tarjetasT .padreT .ejemploT .tituloT:hover, .tarjetasT .padreT .ejemploT .padre .hijoT .botonT:hover, .padre .hijoT .tarjetasT .padreT .ejemploT .botonT:hover {
+  font-weight: 900;
 }
 
 .tituloOfertas {
@@ -346,7 +341,7 @@
   font-size: 1.45rem;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  /*background-color: pink;*/
+  background-image: linear-gradient(to right, red, yellow);
   width: 54vh;
   height: 50vh;
   display: flex;
@@ -379,6 +374,11 @@
   background-color: pink;
   font-size: 1.15rem;
   width: 97%;
+  color: #5B3000;
+}
+.discos .discosC .textoC:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /*-------Discografia------*/

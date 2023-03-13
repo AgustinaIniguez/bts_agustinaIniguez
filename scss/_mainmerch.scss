@@ -18,8 +18,8 @@
     .ejemploT{
         @include flex-direction-center (column);
         align-items: center;
-        height: 60vh;
-        width: 50vh;
+        height: 62vh;
+        width: 52vh;
         margin: 35px;
         border: 10px outset pink;
         background-color: pink;
@@ -36,9 +36,13 @@
                 font-family: $tipografia-general;
                 color: $color-texto;
                 margin: 10px;
+                &:hover{
+                    font-weight: 900;
+                }
             }
     }
 }
+
 
 .tituloOfertas{
     color:$color-texto;
@@ -56,7 +60,7 @@
 .ejemploA{
     @include flex-direction-center (row);
     justify-content: space-between;
-    background-color: pink;
+    background-color: pink; 
     margin-top: 50px;
     margin-bottom: 20px;
     box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);

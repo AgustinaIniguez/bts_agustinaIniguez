@@ -23,6 +23,11 @@
                 background-color: pink;
                 font-size: 1.15rem;
                 width: 97%;
+                color: $color-texto;
+                &:hover{
+                    font-size: 1.20rem;
+                    font-weight: bold;
+                }
                 }
             
             
