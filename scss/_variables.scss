@@ -8,6 +8,7 @@ $tipografia-alternativa:'Open Sans', sans-serif;
 
 $color-primario: #BDE0FE;
 $color-texto: #5B3000;
+$color-parrafo:#050910;
 
 $estilos: (
     flexible: flex,
@@ -16,7 +17,7 @@ $estilos: (
     ancho: 160vh,
 );
 
-
+$c-bezier: cubic-bezier(.1,.22,.8,1.13);
 
 
 /*----------------------------------------*/

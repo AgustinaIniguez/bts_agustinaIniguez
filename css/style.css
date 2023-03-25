@@ -8,8 +8,7 @@
   box-sizing: border-box;
 }
 
-/*--------------------Pense utilizar utilidades para clases sueltas pero no tengo ninguna----------------------*/
-/*--------------------Pense utilizar utilidades para clases sueltas pero no tengo ninguna----------------------*/ /*--------------------HEADER--------------------*/
+/*--------------------HEADER--------------------*/
 .colorFondo {
   background-color: #BDE0FE;
 }
@@ -43,7 +42,7 @@
   object-fit: cover;
 }
 
-.miembros .miembrosT {
+.presentacionB .presentacion, .presentacionB .presentacionP {
   color: #5B3000;
   margin-bottom: 12px;
   margin-top: 30px;
@@ -53,45 +52,107 @@
   font-family: "Poppins", sans-serif;
   padding: 15px;
 }
+.presentacionB .presentacionP {
+  color: #050910;
+  padding: 45px;
+  font-size: 1.58rem;
+  font-weight: 500;
+  margin: 8px;
+}
+.presentacionB .presentacionP .resaltado {
+  color: #5B3000;
+  font-weight: 700;
+}
 
-.padre {
+.tarjetasEfecto .miembrosT {
+  color: #5B3000;
+  margin-bottom: 12px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 3.3rem;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  padding: 15px;
+  margin: 20px;
+}
+.tarjetasEfecto .contenedor {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   padding: 10px;
-  row-gap: 30px;
-  column-gap: 5px;
+  row-gap: 68px;
+  column-gap: 26px;
 }
-.padre .hijoT {
+.tarjetasEfecto .contenedor .flip-card {
   width: 38vh;
-  height: 70vh;
-  border: 2px solid #5B3000;
-  margin: 20px;
+  height: 65vh;
+}
+.tarjetasEfecto .contenedor .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #5B3000;
   box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
+  transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+  transform-style: preserve-3d;
 }
-.padre .hijoT .miembrosImg {
+.tarjetasEfecto .contenedor .flip-card-front, .tarjetasEfecto .contenedor .flip-card-back {
+  position: absolute;
   width: 100%;
-  height: 85%;
-  object-fit: cover;
+  height: 100%;
+  backface-visibility: hidden;
 }
-.padre .hijoT .tituloT, .padre .hijoT .botonT {
-  color: #5B3000;
-  font-size: 1.72rem;
+.tarjetasEfecto .contenedor .flip-card .flip-card-front {
+  background-image: url(../img/kook!.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tarjetasEfecto .contenedor .flip-card .front2 {
+  background-image: url(../img/yoongi!.jpg);
+}
+.tarjetasEfecto .contenedor .flip-card .front3 {
+  background-image: url(../img/nam!.jpg);
+}
+.tarjetasEfecto .contenedor .flip-card .front4 {
+  background-image: url(../img/hoseok!.jpg);
+}
+.tarjetasEfecto .contenedor .flip-card .front5 {
+  background-image: url(../img/jimin!.jpg);
+}
+.tarjetasEfecto .contenedor .flip-card .front6 {
+  background-image: url(../img/tae!!.jpg);
+}
+.tarjetasEfecto .contenedor .flip-card .front7 {
+  background-image: url(../img/jin!!.jpg);
+}
+.tarjetasEfecto .contenedor .flip-card .flip-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  font-size: 1.38rem;
+  background-color: white;
+  color: #050910;
+  font-family: "Open Sans", sans-serif;
+  transform: rotateY(180deg);
+}
+.tarjetasEfecto .contenedor .flip-card .flip-card-back .tituloC {
+  padding-bottom: 10px;
+  font-size: 2.45rem;
   font-style: italic;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  padding-top: 6px;
+  font-weight: 700;
+  color: #5B3000;
   text-align: center;
 }
-.padre .hijoT .botonT {
-  font-weight: 700;
-  font-size: 1.3rem;
-  font-style: initial;
-  font-family: "Open Sans", sans-serif;
+.tarjetasEfecto .contenedor .flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
 }
 
 .novedades h3 {
@@ -181,6 +242,7 @@
 .formulario .form .form_container .form_submit {
   background: #532C0B;
   color: white;
+  text-decoration: none;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -212,28 +274,60 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 62vh;
-  width: 52vh;
+  height: 70vh;
+  width: 50vh;
   margin: 35px;
   border: 10px outset pink;
   background-color: pink;
   box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.75);
+  transition: all 400ms ease;
+}
+.tarjetasT .padreT .ejemploT:hover {
+  transform: translateY(-3%);
 }
 .tarjetasT .padreT .ejemploT .imgT {
   height: 100%;
   width: 100%;
 }
-.tarjetasT .padreT .ejemploT .tituloT, .tarjetasT .padreT .ejemploT .padre .hijoT .botonT, .padre .hijoT .tarjetasT .padreT .ejemploT .botonT {
-  font-size: 1.45rem;
-  font-weight: 500;
+.tarjetasT .padreT .ejemploT .tituloT {
+  font-size: 1.48rem;
+  font-weight: 700;
   font-family: "Poppins", sans-serif;
   color: #5B3000;
   margin: 10px;
 }
-.tarjetasT .padreT .ejemploT .tituloT:hover, .tarjetasT .padreT .ejemploT .padre .hijoT .botonT:hover, .padre .hijoT .tarjetasT .padreT .ejemploT .botonT:hover {
-  font-weight: 900;
+.tarjetasT .padreT .ejemploT .precio {
+  color: #5B3000;
+  font-size: 1.38rem;
+  font-weight: 700;
+}
+.tarjetasT .padreT .ejemploT .botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tarjetasT .padreT .ejemploT .botones .boton {
+  text-decoration: none;
+  background-color: #5B3000;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  font-size: 1.1rem;
+  margin: 5px;
+}
+.tarjetasT .padreT .ejemploT .botones .boton2 {
+  text-decoration: none;
+  color: #5B3000;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 14px;
+  border: none;
+  font-size: 1.1rem;
+  margin: 5px;
 }
 
 .tituloOfertas {
@@ -295,7 +389,7 @@
   color: white;
 }
 
-.tituloNosotros .records {
+.records {
   color: #5B3000;
   margin-bottom: 5px;
   margin-top: 30px;
@@ -306,53 +400,74 @@
   padding: 20px;
 }
 
-.discografia {
-  margin-top: 10px;
-  margin-bottom: 25px;
+.padreNosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  column-gap: 10px;
+  padding: 10px;
 }
-.discografia .alto {
-  height: 50vh;
+.padreNosotros .hijoNosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 42vh;
+  height: 70vh;
+  transition: all 400ms ease;
 }
-.discografia .alto .imgGaleria {
+.padreNosotros .hijoNosotros:hover {
+  transform: translateY(-3%);
+}
+.padreNosotros .hijoNosotros .imgNosotros {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 65%;
 }
-
-.historia {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.historia .historiaHijo {
-  width: 90vh;
-  height: 50vh;
-  display: flex;
-}
-.historia .historiaHijo .imgHistoria {
-  object-fit: cover;
-}
-.historia .historiaTexto {
-  margin: 10px;
+.padreNosotros .hijoNosotros .tituloNosotros {
   text-align: center;
-  font-size: 1.4rem;
   font-weight: 600;
+  padding: 10px;
+}
+.padreNosotros .hijoNosotros .parrafoNosotros {
+  color: #050910;
+  text-align: center;
+  font-size: 1.15rem;
   font-family: "Poppins", sans-serif;
-  width: 54vh;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  color: #5B3000;
+  padding: 5px;
 }
 
 /*-------nosotros------*/
 /*-------Discografia------*/
+.introDisco .discoTitulo, .introDisco .discoParrafo {
+  color: #5B3000;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 3.3rem;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+.introDisco .discoParrafo {
+  color: #050910;
+  padding: 45px;
+  font-size: 1.54rem;
+  font-weight: 500;
+  margin: 8px;
+}
+.introDisco .discoParrafo .resaltado {
+  color: #5B3000;
+  font-weight: 700;
+}
+
 .discos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  row-gap: 50px;
+  row-gap: 70px;
   column-gap: 3px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -360,25 +475,51 @@
 .discos .discosC {
   height: 45vh;
   width: 45vh;
+  transition: all 400ms ease;
+}
+.discos .discosC:hover {
+  transform: translateY(-3%);
 }
 .discos .discosC .imgDisco {
-  width: 97%;
-  height: 97%;
+  width: 100%;
+  height: 100%;
 }
-.discos .discosC .textoC {
-  text-align: center;
-  padding: 8px 10px;
+.discos .discosC .botonDisco {
   background-color: pink;
-  font-size: 1.15rem;
-  width: 97%;
-  color: #5B3000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.discos .discosC .textoC:hover {
+.discos .discosC .botonDisco .textoC {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #5B3000;
+  padding: 6px;
+}
+.discos .discosC .botonDisco .textoC:hover {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
 /*-------Discografia------*/
+.color {
+  background-color: #71acd4;
+}
+
+.error {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.error .tituloE {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.05rem;
+  font-weight: 500;
+  color: white;
+}
+
 /*-------------------------FOOTER----------------------*/
 footer {
   background-color: #BDE0FE;
@@ -386,17 +527,46 @@ footer {
 }
 
 /*-----------------------MEDIA QUERY----------------------*/
+@media screen and (max-width: 900px) {
+  /*--pertenece a error404---*/
+  .error .imgError {
+    width: 38vh;
+    height: 38vh;
+  }
+  .error .tituloE {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 10px;
+  }
+}
+/*--pertenece a error404---*/
 @media screen and (max-width: 700px) {
   /*--pertenece al index---*/
   .novedades {
     display: none;
   }
   /*--pertenece al index---*/
-  /*--pertenece a discografia---*/
-  .discografia .alto {
-    height: initial;
+  /*--pertenece a discografia--*/
+  .introDisco .discoTitulo, .introDisco .discoParrafo {
+    font-size: 2.42rem;
+    font-weight: 900;
+    padding: 8px;
   }
-  /*--pertenece a discografia---*/
+  .introDisco .discoParrafo {
+    padding: 5px;
+    font-size: 1.38rem;
+    font-weight: 500;
+    margin: 8px;
+  }
+  .discos .discosC {
+    height: 39vh;
+    width: 39vh;
+  }
+  .discos .discosC .imgDisco {
+    width: 100%;
+    height: 100%;
+  }
+  /*---pertenece a discografia---*/
   /*--pertenece a merch---*/
   .tituloMerch {
     font-size: 1.8rem;
@@ -408,7 +578,10 @@ footer {
     margin: 18px;
     border: 6px outset pink;
   }
-  .tarjetasT .padreT .ejemploT .tituloT, .tarjetasT .padreT .ejemploT .padre .hijoT .botonT, .padre .hijoT .tarjetasT .padreT .ejemploT .botonT {
+  .tarjetasT .padreT .ejemploT:hover {
+    transform: translateY(-2%);
+  }
+  .tarjetasT .padreT .ejemploT .tituloT {
     font-size: 1.25rem;
     font-weight: 500;
   }
@@ -420,36 +593,41 @@ footer {
   }
   /*--pertenece a merch---*/
   /*--pertenece al index---*/
-  .miembros .miembrosT {
-    font-size: 1.9rem;
+  .presentacionB .presentacion, .presentacionB .presentacionP {
+    font-size: 1.95rem;
     font-weight: 600;
   }
-  .padre .hijoT {
-    width: 38vh;
-    height: 65vh;
-  }
-  .padre .hijoT .miembrosImg {
-    width: 100%;
-    height: 85%;
-  }
-  .padre .hijoT .tituloT, .padre .hijoT .botonT {
-    font-size: 1.55rem;
-    font-weight: 600;
-    padding: 2px;
-  }
-  .padre .hijoT .botonT {
+  .presentacionB .presentacionP {
+    padding: 10px;
+    font-size: 1.26rem;
     font-weight: 500;
-    font-size: 1.1rem;
-    margin-bottom: 35px;
+  }
+  .tarjetasEfecto .miembrosT {
+    font-size: 1.95rem;
+    font-weight: 600;
+  }
+  .tarjetasEfecto .contenedor .flip-card {
+    width: 35vh;
+    height: 62vh;
+  }
+  .tarjetasEfecto .contenedor .flip-card .flip-card-back {
+    font-size: 1.2rem;
+  }
+  .tarjetasEfecto .contenedor .flip-card .flip-card-back .tituloC {
+    font-size: 2.15rem;
+    padding-bottom: 2px;
   }
   /*--pertenece al index---*/
-  /*--pertenece a nosotros---*/
-  .tituloNosotros .records {
-    font-size: 1.9rem;
+  /*--pertenece a nosotros----*/
+  .nosotrosT .tituloNosotros .records {
+    font-size: 2.4rem;
     font-weight: 600;
   }
-  .historia {
-    display: none;
+  .padreNosotros .hijoNosotros .tituloNosotros {
+    text-align: center;
+  }
+  .padreNosotros .hijoNosotros .parrafoNosotros {
+    text-align: center;
   }
   /*--pertenece a nosotros---*/
   /*--pertenece a contacto---*/
@@ -460,6 +638,33 @@ footer {
     font-size: 1.15rem;
   }
   /*--pertenece a contacto---*/
+  /*--pertenece a error404---*/
+  .error .imgError {
+    width: 38vh;
+    height: 38vh;
+  }
+  .error .tituloE {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 10px;
+  }
+}
+/*--pertenece a error404---*/
+@media screen and (max-width: 400px) {
+  .tarjetasEfecto .miembrosT {
+    font-size: 1.95rem;
+    font-weight: 600;
+  }
+  .tarjetasEfecto .contenedor .flip-card {
+    width: 35vh;
+    height: 62vh;
+  }
+  .tarjetasEfecto .contenedor .flip-card .flip-card-back {
+    font-size: 1.05rem;
+  }
+  .tarjetasEfecto .contenedor .flip-card .flip-card-back .tituloC {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+
+.color{
+    background-color: #71acd4;
+}
+
+
+.error{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .tituloE{
+        font-family: $tipografia-alternativa;
+        font-size: 2.05rem;
+        font-weight: 500;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

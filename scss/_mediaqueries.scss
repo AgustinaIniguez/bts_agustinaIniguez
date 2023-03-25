@@ -1,5 +1,26 @@
 /*-----------------------MEDIA QUERY----------------------*/
 
+
+@media screen and (max-width:900px){
+    /*--pertenece a error404---*/
+
+    .error{
+        .imgError{
+            width: 38vh;
+            height: 38vh;
+        }
+        .tituloE{
+            font-size: 1.40rem;
+            font-weight: 500;
+            margin: 10px;
+        }
+    }
+
+}
+    /*--pertenece a error404---*/
+
+
+
 @media screen and (max-width:700px) {
 
     /*--pertenece al index---*/
@@ -9,14 +30,39 @@
 
     /*--pertenece al index---*/
 
-    /*--pertenece a discografia---*/
-    .discografia {
-        .alto {
-            height: initial;
+    /*--pertenece a discografia--*/
+    
+    
+    .introDisco{
+        .discoTitulo{
+            font-size: 2.42rem;
+            font-weight: 900;
+            padding: 8px;
+        }
+        .discoParrafo{
+            padding: 5px;
+            font-size: 1.38rem;
+            font-weight: 500;
+            margin: 8px;
+            
         }
     }
+        
+    .discos{
+        .discosC{
+            height: 39vh;
+            width: 39vh;
+            .imgDisco{
+                width: 100%;
+                height: 100%;
+            }
+        }
+            
+    }
+        
 
-    /*--pertenece a discografia---*/
+
+    /*---pertenece a discografia---*/
 
     /*--pertenece a merch---*/
     .tituloMerch{
@@ -31,6 +77,9 @@
                 width: initial;
                 margin: 18px;
                 border: 6px outset pink;
+                &:hover{
+                    transform: translateY(-2%);
+                }
                 .tituloT{
                     font-size: 1.25rem;
                     font-weight: 500;
@@ -51,48 +100,71 @@
     /*--pertenece a merch---*/
 
     /*--pertenece al index---*/
-    .miembros .miembrosT {
-        font-size: 1.90rem;
-        font-weight: 600;
+
+    .presentacionB{
+        .presentacion{
+            font-size: 1.95rem;
+            font-weight: 600;
+        }
+        .presentacionP{
+            padding: 10px;
+            font-size: 1.26rem;
+            font-weight: 500;
+            
+        }
+            
     }
 
-    .padre {
-        .hijoT {
-            width: 38vh;
-            height: 65vh;
-            .miembrosImg {
-                    width: 100%;
-                    height: 85%;
-            }
-            .tituloT {
-                    font-size: 1.55rem;
-                    font-weight: 600;
-                    padding: 2px;
-            }
-            .botonT {
-                    font-weight: 500;
-                    font-size: 1.10rem;
-                    margin-bottom: 35px;
+
+    .tarjetasEfecto{
+        .miembrosT {
+            font-size: 1.95rem;
+            font-weight: 600;
+        }
+        .contenedor{
+            .flip-card{
+                width: 35vh;
+                height: 62vh;
+                .flip-card-back{
+                        font-size: 1.20rem;
+                        .tituloC{
+                            font-size: 2.15rem;
+                            padding-bottom: 2px;
+                        }
                 }
             }
         }
+    }
 
 
     /*--pertenece al index---*/
 
-    /*--pertenece a nosotros---*/
 
+    /*--pertenece a nosotros----*/
+
+    .nosotrosT{
         .tituloNosotros{
             .records{
-                font-size: 1.90rem;
+                font-size: 2.40rem;
                 font-weight: 600;
             }
+            
         }
-        
-        .historia{
-            display: none;
-        }
+    }
 
+
+
+    .padreNosotros{
+        .hijoNosotros{
+            .tituloNosotros{
+                text-align: center;
+            }
+            .parrafoNosotros{
+                text-align: center;
+            }
+        }
+    
+    }
 
     /*--pertenece a nosotros---*/
 
@@ -111,10 +183,48 @@
         }
     }
 
-
     /*--pertenece a contacto---*/
 
+    /*--pertenece a error404---*/
 
-
+    
+    .error{
+        .imgError{
+            width: 38vh;
+            height: 38vh;
+        }
+        .tituloE{
+            font-size: 1.40rem;
+            font-weight: 500;
+            margin: 10px;
+        }
+    }
 
 }
+
+    /*--pertenece a error404---*/
+
+
+
+@media screen and (max-width:400px) {
+
+    .tarjetasEfecto{
+        .miembrosT {
+            font-size: 1.95rem;
+            font-weight: 600;
+        }
+        .contenedor{
+            .flip-card{
+                width: 35vh;
+                height: 62vh;
+                .flip-card-back{
+                        font-size: 1.05rem;
+                        .tituloC{
+                            font-size: 1.50rem;
+                        }
+                }
+            }
+        }
+    }
+}
+

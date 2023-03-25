@@ -1,37 +1,76 @@
 /*-------Discografia------*/
 
 
+
+.introDisco{
+    .discoTitulo{
+        color:$color-texto;
+        margin-bottom: 5px;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 3.30rem;
+        font-weight: 900;
+        font-family: $tipografia-general;
+        padding: 10px;
+    }
+    .discoParrafo{
+        @extend .discoTitulo;
+        color:$color-parrafo;
+        padding: 45px;
+        font-size: 1.54rem;
+        font-weight: 500;
+        margin: 8px;
+        .resaltado{
+            color: #5B3000;
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+
+
 .discos{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 50px;
+    row-gap: 70px;
     column-gap: 3px;
     padding-top: 30px;
     padding-bottom: 30px;
     .discosC{
         height: 45vh;
         width: 45vh;
+        transition: all 400ms ease;
+        &:hover{
+            transform: translateY(-3%);
+        }
         .imgDisco{
-            width: 97%;
-            height: 97%;
-            }
-        .textoC{
-                text-align: center;
-                padding: 8px 10px;
-                background-color: pink;
+            width: 100%;
+            height: 100%;
+        }
+        .botonDisco{
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .textoC{
+                text-decoration: none;
                 font-size: 1.15rem;
-                width: 97%;
                 color: $color-texto;
+                padding: 6px;
                 &:hover{
                     font-size: 1.20rem;
                     font-weight: bold;
                 }
                 }
             
-            
         }
+
+        }
+        
 }
     
 

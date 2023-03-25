@@ -20,64 +20,58 @@
 
 }
 
-
-
-.tituloNosotros{
-    .records{
-        color: $color-texto;
-        margin-bottom: 5px;
-        margin-top: 30px;
-        text-align: center;
-        font-size: 3.50rem;
-        font-weight: 900;
-        font-family: $tipografia-general;
-        padding: 20px;
-    }
+.records{
+    color: $color-texto;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3.50rem;
+    font-weight: 900;
+    font-family: $tipografia-general;
+    padding: 20px;
 }
 
-    
-.discografia{
-        margin-top: 10px;
-        margin-bottom: 25px;
-        .alto{
-            height: 50vh;
-            .imgGaleria{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-    }
-    
 
-
-.historia{
-    display:flex;
-    justify-content: space-between;
+.padreNosotros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
     align-items: center;
-    .historiaHijo{
-        width: 90vh;
-        height: 50vh;
+    row-gap: 30px;
+    column-gap: 10px;
+    padding: 10px;
+    .hijoNosotros{
         display: flex;
-        .imgHistoria{
-            object-fit: cover;
+        flex-direction: column;
+        justify-content: center;
+        width: 42vh;
+        height: 70vh;
+        transition: all 400ms ease;
+        &:hover{
+            transform: translateY(-3%);
+        }
+        .imgNosotros{
+            width: 100%;
+            height: 65%;
+        }
+        .tituloNosotros{
+            text-align: center;
+            font-weight: 600;
+            padding: 10px;
+            
+
+        }
+        .parrafoNosotros{
+            color:$color-parrafo;
+            text-align: center;
+            font-size: 1.15rem;
+            font-family:$tipografia-general;
+            padding: 5px;
         }
     }
-    .historiaTexto{
-        margin: 10px;
-        text-align: center;
-        font-size: 1.40rem;
-        font-weight: 600;
-        font-family: $tipografia-general;
-        width: 54vh;
-        height: 50vh;
-        display: flex;
-        align-items: center;
-        color: $color-texto;
-        
-    }
-}
 
+}
 
 
 /*-------nosotros------*/

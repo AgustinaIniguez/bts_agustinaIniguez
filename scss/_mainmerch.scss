@@ -18,30 +18,64 @@
     .ejemploT{
         @include flex-direction-center (column);
         align-items: center;
-        height: 62vh;
-        width: 52vh;
+        height: 70vh;
+        width: 50vh;
         margin: 35px;
         border: 10px outset pink;
         background-color: pink;
         box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
         -webkit-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
         -moz-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.75);
+        transition: all 400ms ease;
+        &:hover{
+            transform: translateY(-3%);
+        }
         .imgT{
             height: 100%;
             width: 100%;
             }
         .tituloT{
-                font-size: 1.45rem;
-                font-weight: 500;
+                font-size: 1.48rem;
+                font-weight: 700;
                 font-family: $tipografia-general;
                 color: $color-texto;
                 margin: 10px;
-                &:hover{
-                    font-weight: 900;
+            }
+        .precio{
+                color: $color-texto;
+                font-size: 1.38rem;
+                font-weight: 700;
+            }
+        .botones{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+                .boton{ 
+                    text-decoration: none;
+                    background-color: $color-texto;
+                    font-family: $tipografia-general;
+                    font-size: medium;
+                    color: white;
+                    padding: 10px 14px;
+                    border: none;
+                    font-size: 1.10rem;
+                    margin:5px
+                }
+                .boton2{
+                    text-decoration: none;
+                    color: $color-texto;
+                    background-color: white;
+                    font-family: $tipografia-general;
+                    padding: 10px 14px;
+                    border: none;
+                    font-size: 1.10rem;
+                    margin:5px;
                 }
             }
     }
 }
+
+
 
 
 .tituloOfertas{
@@ -96,3 +130,10 @@
 
 
 /*-------Merch-----*/
+
+
+
+
+
+
+
